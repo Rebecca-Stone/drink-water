@@ -1,15 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:400,600&display=swap");
-
-:root {
-  --border-color: #144fc6;
-  --fill-color: #6ab3f8;
-}
-
 * {
   box-sizing: border-box;
 }
-
-body {
+* body {
   background-color: #3494e4;
   color: #fff;
   font-family: "Montserrat", sans-serif;
@@ -18,20 +10,17 @@ body {
   align-items: center;
   margin-bottom: 40px;
 }
-
-h1 {
+* body h1 {
   margin: 10px 0 0;
 }
-
-h3 {
+* body h3 {
   font-weight: 400;
   margin: 10px 0;
 }
-
-.cup {
+* body .cup {
   background-color: #fff;
-  border: 4px solid var(--border-color);
-  color: var(--border-color);
+  border: 4px solid #144fc6;
+  color: #144fc6;
   border-radius: 0 0 40px 40px;
   height: 330px;
   width: 150px;
@@ -40,8 +29,44 @@ h3 {
   flex-direction: column;
   overflow: hidden;
 }
-
-.cup.cup-small {
+* body .cup .remained {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex: 1;
+  transition: 0.3s ease;
+}
+* body .cup .remained span {
+  font-size: 20px;
+  font-weight: bold;
+}
+* body .cup .remained small {
+  font-size: 12px;
+}
+* body .cup .percentage {
+  background-color: #6ab3f8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 30px;
+  height: 0;
+  transition: 0.3s ease;
+}
+* body .text {
+  text-align: center;
+  margin: 0 0 5px;
+}
+* body .cups {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 280px;
+}
+* body .cups .cup.cup-small {
   height: 95px;
   width: 50px;
   border-radius: 0 0 15px 15px;
@@ -54,51 +79,7 @@ h3 {
   margin: 5px;
   transition: 0.3s ease;
 }
-
-.cup.cup-small.full {
-  background-color: var(--fill-color);
+* body .cups .cup.cup-small.full {
+  background-color: #6ab3f8;
   color: #fff;
-}
-
-.cups {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  width: 280px;
-}
-
-.remained {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  flex: 1;
-  transition: 0.3s ease;
-}
-
-.remained span {
-  font-size: 20px;
-  font-weight: bold;
-}
-
-.remained small {
-  font-size: 12px;
-}
-
-.percentage {
-  background-color: var(--fill-color);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: bold;
-  font-size: 30px;
-  height: 0;
-  transition: 0.3s ease;
-}
-
-.text {
-  text-align: center;
-  margin: 0 0 5px;
 }
